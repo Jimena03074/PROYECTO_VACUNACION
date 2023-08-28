@@ -1,0 +1,15 @@
+------------------PACIENTE----------------
+CURP: 
+LEGJ000215MTLNRMA1 (18 caracteres)
+pppppppppppppppppp
+
+Nombre:
+Jimena Leon Garcia
+
+Edad:6 años
+
+Direccion:
+Privada cuapa 3208 S.Momoxpan Cholula Puebla pue.
+
+
+----------------TUTOR---------------------

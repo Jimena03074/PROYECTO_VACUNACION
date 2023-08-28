@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>961</width>
+    <height>539</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>30</y>
+      <width>361</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe MDL2 Assets</family>
+      <pointsize>38</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Agregar Vacuna</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>80</y>
+      <width>311</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../imagenes/logoN.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>200</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Nombre de la vacuna</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>150</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Lote de la vacuna</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>290</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Vía de administración</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbAgregarVa">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>360</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Dubai Medium</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+
+	background-color:rgb(205, 187, 227);
+	border-radius:10px;
+	border:10px;
+}
+
+
+QPushButton:hover{
+background-color: rgb(170, 255, 127);
+	border-radius:10px;
+	border: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>AGREGAR</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditLote">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>140</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+border: .5px solid
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>250</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Disponibilidad</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditDispo">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>240</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+border: .5px solid
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>470</y>
+      <width>251</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../imagenes/rosa.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbMenuV">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>480</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Dubai Medium</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgba(255, 255, 255, 5);
+	border-radius:10px;
+	border:10px;
+}
+
+
+QPushButton:hover{
+background-color: rgb(170, 255, 127);
+	border-radius:10px;
+	border: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>REGRESAR A VACUNAS</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../imagenes/REGRESAR.png</normaloff>../imagenes/REGRESAR.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbConsultarV">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>480</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Dubai Medium</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton{
+	background-color: rgba(255, 255, 255, 5);
+	border-radius:10px;
+	border:10px;
+}
+
+
+QPushButton:hover{
+background-color: rgb(170, 255, 127);
+	border-radius:10px;
+	border: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>CONSULTAR</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>470</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../imagenes/azul.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbModificarV">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>480</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Dubai Medium</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton{
+	background-color: rgba(255, 255, 255, 5);
+	border-radius:10px;
+	border:10px;
+}
+
+
+QPushButton:hover{
+background-color: rgb(170, 255, 127);
+	border-radius:10px;
+	border: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>ACTUALIZAR</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbEliminarV">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>480</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Dubai Medium</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton{
+	background-color: rgba(255, 255, 255, 5);
+	border-radius:10px;
+	border:10px;
+}
+
+
+QPushButton:hover{
+background-color: rgb(170, 255, 127);
+	border-radius:10px;
+	border: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>ELIMINAR</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxVacuna">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>190</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+border: .5px solid
+}</string>
+    </property>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BCG (bacilo de Calmette-Guerin)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Hepatits B</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Pentavalente acelular</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Rotavirus</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Neumococo conjugada</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Influenza</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SPR (sarampión, rubéola y parotiditis)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DPT (Diphtheria, Tetanus y acellular Pertussis)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>OPV (POLIO ORAL)</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBoxViaA">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>290</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox{
+border: .5px solid
+}
+</string>
+    </property>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>intradermica</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Dosis Oral</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>470</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../imagenes/azul.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>470</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../imagenes/azul.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pblimpiarAV">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>360</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Dubai Medium</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+
+	background-color:rgb(205, 187, 227);
+	border-radius:10px;
+	border:10px;
+}
+
+
+QPushButton:hover{
+background-color: rgb(170, 255, 127);
+	border-radius:10px;
+	border: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>LIMPIAR</string>
+    </property>
+   </widget>
+   <zorder>label_9</zorder>
+   <zorder>label_12</zorder>
+   <zorder>label_11</zorder>
+   <zorder>lineEditDispo</zorder>
+   <zorder>label_10</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_6</zorder>
+   <zorder>pbAgregarVa</zorder>
+   <zorder>lineEditLote</zorder>
+   <zorder>label_7</zorder>
+   <zorder>pbMenuV</zorder>
+   <zorder>pbConsultarV</zorder>
+   <zorder>pbModificarV</zorder>
+   <zorder>pbEliminarV</zorder>
+   <zorder>comboBoxVacuna</zorder>
+   <zorder>comboBoxViaA</zorder>
+   <zorder>pblimpiarAV</zorder>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>lineEditLote</tabstop>
+  <tabstop>comboBoxVacuna</tabstop>
+  <tabstop>lineEditDispo</tabstop>
+  <tabstop>comboBoxViaA</tabstop>
+  <tabstop>pbAgregarVa</tabstop>
+  <tabstop>pblimpiarAV</tabstop>
+  <tabstop>pbEliminarV</tabstop>
+  <tabstop>pbModificarV</tabstop>
+  <tabstop>pbConsultarV</tabstop>
+  <tabstop>pbMenuV</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
